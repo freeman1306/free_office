@@ -1,0 +1,39 @@
+@font-face {
+    font-family: GothamRounded;
+    src: url(fonts/gothamrounded-light.otf);
+}
+
+header {
+    height: 890px;
+    background-image: url("../img/main_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+}
+
+header .logo {
+    color: #fff;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-top: 60px;
+    margin-left: 43px;
+    margin-bottom: 200px;
+}
+
+header .logo:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/icons/Briefcase.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    left: -40px;
+}
+
+header h1 {
+    font-family: GothamRounded;
+}
+
+/*# sourceMappingURL=style.css.map */
