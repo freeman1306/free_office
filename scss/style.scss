@@ -63,25 +63,74 @@ header {
 }
 
 #services {
+    height: 836px;
     background: #f6f6f6;
     h2 {
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        margin-top: 280px;
+        margin-top: 200px;
+    }
+    .dash {
+        margin: 2rem 0 3rem 0;
+        background: #000;
+        width: 23px;
+        height: 1px;
     }
     p {
         width: 23rem;
+        font-size: 18px;
+        font-family: ProximaNovaRegular;
+        color: #888888;
     }
     .types {
         display: flex;
+        margin: 14rem 0 0 6rem;
         .sq-column {
             transform: rotate(45deg);
+            &:nth-child(1) {
+                .square:nth-child(1) {
+                    animation: types 8s ease-in-out infinite;
+                }
+            }
+            &:nth-child(2) {
+                .square:nth-child(3) {
+                    animation: types 8s ease-in-out 2s infinite;
+                }
+            }
+            &:nth-child(3) {
+                .square:nth-child(2) {
+                    animation: types 8s ease-in-out 4s infinite;
+                }
+            }
             .square {
                 height: 140px;
                 width: 140px;
                 background: #fff;
                 margin: 0 70px 12px 0;
                 position: relative;
+                transition: all .7s;
+                @keyframes types {
+                    from {
+                        background: #fff;
+                        color: #000;
+                    }
+                    8% {
+                        background: #000;
+                        color: #fff;
+                    }
+                    16% {
+                        background: #fff;
+                        color: #000;
+                    }
+                    to {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+                &:hover {
+                    background: #000;
+                    color: #ffffff;
+                }
                 .sq-content {
                     position: absolute;
                     top: 30px;

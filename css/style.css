@@ -50,23 +50,56 @@ header {
     cursor: pointer; }
 
 #services {
+  height: 836px;
   background: #f6f6f6; }
   #services h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-top: 280px; }
+    margin-top: 200px; }
+  #services .dash {
+    margin: 2rem 0 3rem 0;
+    background: #000;
+    width: 23px;
+    height: 1px; }
   #services p {
-    width: 23rem; }
+    width: 23rem;
+    font-size: 18px;
+    font-family: ProximaNovaRegular;
+    color: #888888; }
   #services .types {
-    display: flex; }
+    display: flex;
+    margin: 14rem 0 0 6rem; }
     #services .types .sq-column {
       transform: rotate(45deg); }
+      #services .types .sq-column:nth-child(1) .square:nth-child(1) {
+        animation: types 8s ease-in-out infinite; }
+      #services .types .sq-column:nth-child(2) .square:nth-child(3) {
+        animation: types 8s ease-in-out 2s infinite; }
+      #services .types .sq-column:nth-child(3) .square:nth-child(2) {
+        animation: types 8s ease-in-out 4s infinite; }
       #services .types .sq-column .square {
         height: 140px;
         width: 140px;
         background: #fff;
         margin: 0 70px 12px 0;
-        position: relative; }
+        position: relative;
+        transition: all .7s; }
+@keyframes types {
+  from {
+    background: #fff;
+    color: #000; }
+  8% {
+    background: #000;
+    color: #fff; }
+  16% {
+    background: #fff;
+    color: #000; }
+  to {
+    background: #fff;
+    color: #000; } }
+        #services .types .sq-column .square:hover {
+          background: #000;
+          color: #ffffff; }
         #services .types .sq-column .square .sq-content {
           position: absolute;
           top: 30px;
