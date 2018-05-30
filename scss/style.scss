@@ -3,6 +3,16 @@
     src: url(fonts/gothamrounded-light.otf);
 }
 
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url(fonts/proximanova-regular.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaSemibold;
+    src: url(fonts/proximanova-semibold.otf);
+}
+
 header {
     height: 890px;
     background-image: url('../img/main_bg.png');
@@ -30,5 +40,65 @@ header {
     }
     h1 {
         font-family: GothamRounded;
+    }
+    p {
+        font-family: ProximaNovaRegular;
+        margin: 35px 0;
+    }
+    .dash {
+        background: #fff;
+        width: 23px;
+        height: 1px;
+        margin-bottom: 35px;
+    }
+    button {
+        font-family: ProximaNovaSemibold;
+        color: #ffffff;
+        border: 2px solid #fff;
+        background: transparent;
+        height: 56px;
+        width: 155px;
+        cursor: pointer;
+    }
+}
+
+#services {
+    background: #f6f6f6;
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        margin-top: 280px;
+    }
+    p {
+        width: 23rem;
+    }
+    .types {
+        display: flex;
+        .sq-column {
+            transform: rotate(45deg);
+            .square {
+                height: 140px;
+                width: 140px;
+                background: #fff;
+                margin: 0 70px 12px 0;
+                position: relative;
+                .sq-content {
+                    position: absolute;
+                    top: 30px;
+                    left: -36px;
+                    width: 12rem;
+                    transform: rotate(-45deg);
+                    text-align: center;
+                    img {
+                        display: block;
+                        margin: 3px auto;
+                    }
+                    span {
+                        font-family: ProximaNovaSemibold;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }

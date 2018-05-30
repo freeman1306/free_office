@@ -1,39 +1,84 @@
 @font-face {
-    font-family: GothamRounded;
-    src: url(fonts/gothamrounded-light.otf);
-}
-
+  font-family: GothamRounded;
+  src: url(fonts/gothamrounded-light.otf); }
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url(fonts/proximanova-regular.otf); }
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url(fonts/proximanova-semibold.otf); }
 header {
-    height: 890px;
-    background-image: url("../img/main_bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #ffffff;
-}
-
-header .logo {
+  height: 890px;
+  background-image: url("../img/main_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff; }
+  header .logo {
     color: #fff;
     margin-bottom: 2rem;
     position: relative;
     padding-top: 60px;
     margin-left: 43px;
-    margin-bottom: 200px;
-}
+    margin-bottom: 200px; }
+    header .logo:before {
+      content: '';
+      position: absolute;
+      background-image: url("../img/icons/Briefcase.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: -40px; }
+  header h1 {
+    font-family: GothamRounded; }
+  header p {
+    font-family: ProximaNovaRegular;
+    margin: 35px 0; }
+  header .dash {
+    background: #fff;
+    width: 23px;
+    height: 1px;
+    margin-bottom: 35px; }
+  header button {
+    font-family: ProximaNovaSemibold;
+    color: #ffffff;
+    border: 2px solid #fff;
+    background: transparent;
+    height: 56px;
+    width: 155px;
+    cursor: pointer; }
 
-header .logo:before {
-    content: '';
-    position: absolute;
-    background-image: url("../img/icons/Briefcase.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    left: -40px;
-}
-
-header h1 {
-    font-family: GothamRounded;
-}
+#services {
+  background: #f6f6f6; }
+  #services h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 280px; }
+  #services p {
+    width: 23rem; }
+  #services .types {
+    display: flex; }
+    #services .types .sq-column {
+      transform: rotate(45deg); }
+      #services .types .sq-column .square {
+        height: 140px;
+        width: 140px;
+        background: #fff;
+        margin: 0 70px 12px 0;
+        position: relative; }
+        #services .types .sq-column .square .sq-content {
+          position: absolute;
+          top: 30px;
+          left: -36px;
+          width: 12rem;
+          transform: rotate(-45deg);
+          text-align: center; }
+          #services .types .sq-column .square .sq-content img {
+            display: block;
+            margin: 3px auto; }
+          #services .types .sq-column .square .sq-content span {
+            font-family: ProximaNovaSemibold;
+            font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
