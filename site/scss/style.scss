@@ -1,3 +1,9 @@
+@media screen and (max-width: 992px) {
+    #project .devices {
+        margin-top: 3em !important;
+    }
+}
+
 @font-face {
     font-family: GothamRounded;
     src: url(fonts/gothamrounded-light.otf);
@@ -88,7 +94,6 @@ header {
     background-image: url('../img/3.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     padding: 10em 0;
     .dash {
         margin: 2rem 0 3rem 0;
@@ -101,6 +106,7 @@ header {
         font-size: 18px;
         font-family: ProximaNovaRegular;
         color: #888888;
+        text-shadow: -1px 0px 0px #ffffff;
     }
 }
 
@@ -142,6 +148,14 @@ header {
         font-family: ProximaNovaRegular;
         color: #fff;
         margin-bottom: 4rem;
+        max-width: 36em;
+    }
+    .col-md-12 {
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
     }
     button {
         font-family: ProximaNovaSemibold;
@@ -203,10 +217,13 @@ header {
         }
     }
     .devices {
-        margin-top: 7rem;
+        margin-top: -2em;
         text-align: center;
         #myTabContent {
-            height: 26rem;
+            img {
+                height: auto;
+                width: 100%;
+            }
         }
     }
 }
@@ -264,7 +281,6 @@ header {
     background-image: url('../img/4.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     padding: 10em 0;
     small {
         color: red;

@@ -1,3 +1,6 @@
+@media screen and (max-width: 992px) {
+  #project .devices {
+    margin-top: 3em !important; } }
 @font-face {
   font-family: GothamRounded;
   src: url(fonts/gothamrounded-light.otf); }
@@ -70,7 +73,6 @@ header {
   background-image: url("../img/3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   padding: 10em 0; }
   #services .dash {
     margin: 2rem 0 3rem 0;
@@ -81,7 +83,8 @@ header {
     max-width: 23rem;
     font-size: 18px;
     font-family: ProximaNovaRegular;
-    color: #888888; }
+    color: #888888;
+    text-shadow: -1px 0px 0px #ffffff; }
 
 #works {
   height: 300px;
@@ -114,7 +117,12 @@ header {
     font-size: 18px;
     font-family: ProximaNovaRegular;
     color: #fff;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    max-width: 36em; }
+  #project .col-md-12 button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
   #project button {
     font-family: ProximaNovaSemibold;
     color: #ffffff;
@@ -150,10 +158,11 @@ header {
     #project .nav .nav-link:nth-child(3).active .icon1 {
       display: none; }
   #project .devices {
-    margin-top: 7rem;
+    margin-top: -2em;
     text-align: center; }
-    #project .devices #myTabContent {
-      height: 26rem; }
+    #project .devices #myTabContent img {
+      height: auto;
+      width: 100%; }
 
 #our_minds p {
   color: #989898; }
@@ -193,7 +202,6 @@ header {
   background-image: url("../img/4.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   padding: 10em 0; }
   #we small {
     color: red;
