@@ -4,6 +4,12 @@
     }
 }
 
+@media screen and (max-width:550px) {
+    .f_bottom {
+        text-align: center;
+    }
+}
+
 @font-face {
     font-family: GothamRounded;
     src: url(fonts/gothamrounded-light.otf);
