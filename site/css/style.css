@@ -28,21 +28,21 @@ p {
   color: #888888;
   width: 100%; }
 
-header {
+.main {
   height: 890px;
   background-image: url("../img/main_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff; }
-  header .logo {
+  .main .logo {
     color: #fff;
     margin-bottom: 2rem;
     position: relative;
     padding-top: 60px;
     margin-left: 43px;
     margin-bottom: 200px; }
-    header .logo:before {
+    .main .logo:before {
       content: '';
       position: absolute;
       background-image: url("../img/icons/Briefcase.png");
@@ -51,19 +51,19 @@ header {
       width: 25px;
       height: 25px;
       left: -40px; }
-  header h1 {
+  .main h1 {
     font-family: GothamRounded; }
-  header p {
+  .main p {
     font-family: ProximaNovaRegular;
     margin: 35px 0;
     color: #ffffff;
     font-size: 15px; }
-  header .dash {
+  .main .dash {
     background: #fff;
     width: 23px;
     height: 1px;
     margin-bottom: 35px; }
-  header button {
+  .main button {
     font-family: ProximaNovaSemibold;
     color: #ffffff;
     border: 2px solid #fff;
